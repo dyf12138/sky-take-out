@@ -9,5 +9,5 @@ sky:
   alioss:
     endpoint: oss-cn-hangzhou.aliyuncs.com
     access-key-id: LTAI5tRJYjSPh5DruBj19k8H
-    access-key-secret: 6aYY3C55HZuQ06Wy7yyV6NCseKgNDc
+    access-key-secret: 
     bucket-name: yifanduan
