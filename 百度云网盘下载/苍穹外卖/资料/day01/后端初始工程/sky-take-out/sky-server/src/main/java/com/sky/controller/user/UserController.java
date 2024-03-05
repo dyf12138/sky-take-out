@@ -45,11 +45,12 @@ public class UserController {
         Map<String, Object> claims = new HashMap<>();
         claims.put(JwtClaimsConstant.USER_ID,user.getId());
         String token = JwtUtil.createJWT(jwtProperties.getUserSecretKey(),jwtProperties.getUserTtl(),claims);
+        log.info("jwt token: {}",token);
         UserLoginVO userLoginVO = UserLoginVO.builder()
                .id(user.getId())
-                .openid(user.getOpenid())
-                .token(token)
-                .build();
+               .openid(user.getOpenid())
+               .token(token)
+               .build();
         return Result.success(userLoginVO);
     }
 }
